@@ -43,7 +43,7 @@ def order_players(data, number):
 
     print(couple_of_players)
 
-    # we use numpy to get all the combinations in an optimal way
+    # we use numpy to get all the combinations in an "optimal" way
     for key in couple_of_players:
         mesh = np.array(np.meshgrid(couple_of_players[key][0], couple_of_players[key][1]))
         combinations = mesh.T.reshape(-1, 2)
